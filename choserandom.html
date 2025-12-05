@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+    <style>
+        body{
+
+            width: 100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        .random{
+            height:500px;
+            width:500px;
+            background: red;
+            border-radius: 100px/200px;
+            margin: 10px;
+        }
+        button{
+            border-radius:15px;
+        }
+        h1{color:red;}
+
+    </style>
+</head>
+<body>
+    <div>
+    <div class="random"></div>
+    <button onclick="badal()" c>
+         <h1 class="tt">Change Color</h1>
+    </button>
+
+</div>
+
+    <script>
+        let colors=["red","blue","orange","purple","yellow","pink","cyan"];
+        const x=document.getElementsByClassName('random')[0];
+        const y=document.getElementsByClassName('tt')[0];
+       
+        function badal(){
+            let n=Math.floor(Math.random()*7);
+            x.style.background = colors[n];
+            y.style.color = colors[n];
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
